@@ -11,7 +11,6 @@ public class PipeMiddleScript : MonoBehaviour
     void Start()
     {
         logic = GameObject.FindWithTag("Logic").GetComponent<LogicScript>();
-
     }
 
     // Update is called once per frame

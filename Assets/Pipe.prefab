@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 6320926670666911544}
   m_Layer: 0
   m_Name: Middle
-  m_TagString: Untagged
+  m_TagString: Logic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1754bb956b366e4d8165c485048814f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
 --- !u!1 &8876625960673331260
 GameObject:
   m_ObjectHideFlags: 0

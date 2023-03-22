@@ -12,7 +12,7 @@ public class LogicScript : MonoBehaviour
     [ContextMenu("Increase Score")]
     public void addScore(int scoreToAdd)
     {
-        playerScore+=scoreToAdd;
+        playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
     }
 
@@ -20,4 +20,6 @@ public class LogicScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    
 }
