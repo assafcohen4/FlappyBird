@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class BirdScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logic;
     public bool birdIsAlive = true;
+    public Tuple<float, float> deadzone = new Tuple<float,float>(-25,25);
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,10 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive)
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
+        }
+        if(transform.position.y < deadzone.Item1 || transform.position.y > deadzone.Item2)
+        {
+            logic.gameOver();
         }
         
     }
